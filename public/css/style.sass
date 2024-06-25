@@ -1,0 +1,392 @@
+// ------ > GLOBAL < ------
+body
+    font-family: Arial, sans-serif
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+.container-fluid
+    width: auto
+    padding-left: 2.0833vw
+    padding-right: 2.0833vw
+
+h1, h2, h3, h4, h5, h6
+    color: #000000
+    margin: 0
+
+p
+    margin: 0
+
+ul
+    list-style: none
+    padding: 0
+    margin: 0
+
+.ml-auto
+    margin-left: auto
+
+.my-10
+    margin-top: 0.5208vw
+    margin-bottom: 0.5208vw
+
+a
+    text-decoration: none
+    color: #000000
+    outline: none
+
+    &:focus
+        outline: none
+    &:active
+        outline: none
+
+button
+    cursor: pointer
+
+.rotate-180
+    transform: rotate(180deg)
+
+.btn-blue.disabled
+    background: silver!important
+
+// ------ > HEADER < ------
+#header
+    width: auto
+    display: flex
+    justify-content: space-between
+    align-items: center
+    height: 3vw
+    margin-bottom: 3.6458vw
+
+    #logo
+        font-weight: 900
+        font-size: 1.3021vw
+
+    .menu-items
+        width: max-content
+        height: 100%
+        display: flex
+        align-items: center
+        gap: 1.0416vw
+
+        .menu-item
+            width: max-content
+            height: max-content
+
+            a
+                font-weight: 600
+                font-size: 0.7292vw
+                display: flex
+
+                .wishlist-product-count
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    color: white
+                    font-size: 0.625vw
+                    width: 0.9vw
+                    height: 0.9vw
+                    border-radius: 100%
+                    background: #eb4646
+                    margin-left: 0.5208vw
+
+            a.login
+                padding: 0.5vw 0.77vw
+                background: #000000
+                border-radius: 0.5208vw
+                color: white
+                font-size: 0.625vw
+                border: 1px solid black
+                transition: .3s ease-in-out
+
+                &:hover
+                    color: #000000
+                    background: transparent
+
+
+
+// ------ > FOOTER < ------
+#footer
+    height: max-content
+    display: flex
+    margin-top: 3.6458vw
+    padding-top: 2.0833vw
+    padding-bottom: 2.0833vw
+    border-top: 1px solid #efefef
+
+    .footer-left-part
+        width: 50%
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+
+        .footer-logo
+            font-size: 1.3542vw
+            font-weight: 600
+
+        .social-icons
+            width: 100%
+            display: flex
+            gap: 0.8vw
+            align-items: center
+
+            svg
+                width: 0.7812vw
+
+
+    .footer-right-part
+        width: 50%
+        display: flex
+        justify-content: space-between
+
+        .footer-item
+            width: 33%
+            display: flex
+            flex-direction: column
+            gap: 1.0417vw
+
+            .footer-title
+                font-size: .9vw
+                font-weight: 600
+
+            .footer-elems
+                display: flex
+                flex-direction: column
+                gap: 1.0417vw
+
+                .footer-elem
+                    a
+                        font-size: 0.7292vw
+                        color: #4b4b4b
+
+
+
+// ------ > GALLERY CONTENT < ------
+.gallery-content
+    height: max-content
+    display: flex
+    flex-direction: column
+    gap: 3.6458vw
+
+    .gallery-card-content
+        width: 100%
+        display: flex
+        flex-wrap: wrap
+        gap: 1.5625vw
+
+        .gallery-card
+            width: calc(25% - 1.1719vw)
+            display: flex
+            flex-direction: column
+            gap: 1.0417vw
+
+            .image-content
+                width: 100%
+                height: 13.0208vw
+                border-radius: 0.5208vw
+                overflow: hidden
+                position: relative
+
+                img
+                    width: 100%
+                    height: 100%
+                    object-fit: cover
+
+                .btn-add-to-wishlist
+                    width: 30px
+                    height: 30px
+                    background: #ffffff
+                    border-radius: 100%
+                    position: absolute
+                    top: 10px
+                    right: 5px
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    border: none
+                    outline: none
+
+                    svg
+                        width: 75%
+                        height: 75%
+
+                    &.active
+                        svg
+                            g
+                                path
+                                    fill: red
+
+
+            .information-content
+                width: 100%
+                display: flex
+                flex-direction: column
+                gap: 0.5208vw
+
+                .image-name
+                    font-weight: 500
+                    font-size: 0.9896vw
+
+                .added-by
+                    font-size: 0.7812vw
+
+                    span
+                        color: #9a9a9a
+
+    .gallery-page-control
+        width: 100%
+        display: flex
+        justify-content: center
+
+        .next-prev-buttons
+            width: max-content
+            display: flex
+            gap: 2.6042vw
+
+            .btn-blue
+                width: max-content
+                height: max-content
+                cursor: pointer
+                padding: 0.3646vw 1.875vw
+                border-radius: 0.5208vw
+                background: #3c64f5
+                display: flex
+                justify-content: center
+                align-items: center
+                gap: 0.5208vw
+                font-size: 0.7292vw
+                color: white
+
+                svg
+                    width: 0.625vw
+
+
+
+// ------ > LOGIN CONTENT < ------
+.login-content
+    min-height: 23.4375vw
+    display: flex
+
+    .card
+        width: 20.8333vw
+        margin: auto
+        background-color: #fff
+        padding: 1.0417vw
+        border-radius: 0.5208vw
+        box-shadow: 0 0.2604vw 0.5208vw rgba(0, 0, 0, 0.1)
+
+        h2
+            text-align: center
+            color: #333
+            margin-bottom: 1.3021vw
+
+        form
+            display: flex
+            flex-direction: column
+
+            input
+                padding: 0.5208vw
+                margin-bottom: 0.625vw
+                border: 1px solid #ddd
+                border-radius: 0.5208vw
+                transition: border-color 0.3s ease-in-out
+                outline: none
+                color: #333
+
+                &:focus
+                    border-color: #555
+
+            button
+                background-color: #3c64f5
+                color: #fff
+                padding: 0.5208vw
+                border-radius: 0.5208vw
+                cursor: pointer
+                transition: background-color 0.3s ease-in-out
+                border: 1px solid #3c64f5
+
+                &:hover
+                    background-color: transparent
+                    color: #3c64f5
+                    border-color: #3c64f5
+
+
+
+// ------ > MY PHOTOS CONTENT < ------
+.photos-content
+    min-height: 23.4375vw
+    display: flex
+
+    .card
+        width: 20.8333vw
+        margin: auto
+        background-color: #fff
+        padding: 1.0417vw
+        border-radius: 0.5208vw
+        box-shadow: 0 0.2604vw 0.5208vw rgba(0, 0, 0, 0.1)
+
+        h2
+            text-align: center
+            color: #333
+            margin-bottom: 1.3021vw
+
+        form
+            display: flex
+            flex-direction: column
+
+            input
+                padding: 0.5208vw
+                margin-bottom: 0.625vw
+                border: 1px solid #ddd
+                border-radius: 0.5208vw
+                transition: border-color 0.3s ease-in-out
+                outline: none
+                color: #333
+
+                &:focus
+                    border-color: #555
+
+            button
+                background-color: #3c64f5
+                color: #fff
+                padding: 0.5208vw
+                border-radius: 0.5208vw
+                cursor: pointer
+                transition: background-color 0.3s ease-in-out
+                border: 1px solid #3c64f5
+
+                &:hover
+                    background-color: transparent
+                    color: #3c64f5
+                    border-color: #3c64f5
+
+.my-photos-table
+    width: 80%
+    margin: auto
+    table
+        width: 100%
+        border-collapse: collapse
+
+    th, td
+        padding: 10px
+        border: 1px solid #ddd
+        text-align: left
+
+    th
+        background-color: #f4f4f4
+
+    img
+        max-width: 100px
+        height: auto
+
+    .btn
+        padding: 5px 10px
+        text-decoration: none
+        color: #fff
+        border-radius: 5px
+
+    .btn-edit
+        background-color: #4CAF50
+
+    .btn-delete
+        background-color: #f44336
+

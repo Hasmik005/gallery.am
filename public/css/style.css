@@ -1,0 +1,392 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container-fluid {
+  width: auto;
+  padding-left: 2.0833vw;
+  padding-right: 2.0833vw;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #000000;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+.my-10 {
+  margin-top: 0.5208vw;
+  margin-bottom: 0.5208vw;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+  outline: none;
+}
+a:focus {
+  outline: none;
+}
+a:active {
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+.rotate-180 {
+  transform: rotate(180deg);
+}
+
+.btn-blue.disabled {
+  background: silver !important;
+}
+
+#header {
+  width: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 3vw;
+  margin-bottom: 3.6458vw;
+}
+#header #logo {
+  font-weight: 900;
+  font-size: 1.3021vw;
+}
+#header .menu-items {
+  width: max-content;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 1.0416vw;
+}
+#header .menu-items .menu-item {
+  width: max-content;
+  height: max-content;
+}
+#header .menu-items .menu-item a {
+  font-weight: 600;
+  font-size: 0.7292vw;
+  display: flex;
+}
+#header .menu-items .menu-item a .wishlist-product-count {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 0.625vw;
+  width: 0.9vw;
+  height: 0.9vw;
+  border-radius: 100%;
+  background: #eb4646;
+  margin-left: 0.5208vw;
+}
+#header .menu-items .menu-item a.login {
+  padding: 0.5vw 0.77vw;
+  background: #000000;
+  border-radius: 0.5208vw;
+  color: white;
+  font-size: 0.625vw;
+  border: 1px solid black;
+  transition: 0.3s ease-in-out;
+}
+#header .menu-items .menu-item a.login:hover {
+  color: #000000;
+  background: transparent;
+}
+
+#footer {
+  height: max-content;
+  display: flex;
+  margin-top: 3.6458vw;
+  padding-top: 2.0833vw;
+  padding-bottom: 2.0833vw;
+  border-top: 1px solid #efefef;
+}
+#footer .footer-left-part {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#footer .footer-left-part .footer-logo {
+  font-size: 1.3542vw;
+  font-weight: 600;
+}
+#footer .footer-left-part .social-icons {
+  width: 100%;
+  display: flex;
+  gap: 0.8vw;
+  align-items: center;
+}
+#footer .footer-left-part .social-icons svg {
+  width: 0.7812vw;
+}
+#footer .footer-right-part {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+#footer .footer-right-part .footer-item {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.0417vw;
+}
+#footer .footer-right-part .footer-item .footer-title {
+  font-size: 0.9vw;
+  font-weight: 600;
+}
+#footer .footer-right-part .footer-item .footer-elems {
+  display: flex;
+  flex-direction: column;
+  gap: 1.0417vw;
+}
+#footer .footer-right-part .footer-item .footer-elems .footer-elem a {
+  font-size: 0.7292vw;
+  color: #4b4b4b;
+}
+
+.gallery-content {
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  gap: 3.6458vw;
+}
+.gallery-content .gallery-card-content {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5625vw;
+}
+.gallery-content .gallery-card-content .gallery-card {
+  width: calc(25% - 1.1719vw);
+  display: flex;
+  flex-direction: column;
+  gap: 1.0417vw;
+}
+.gallery-content .gallery-card-content .gallery-card .image-content {
+  width: 100%;
+  height: 13.0208vw;
+  border-radius: 0.5208vw;
+  overflow: hidden;
+  position: relative;
+}
+.gallery-content .gallery-card-content .gallery-card .image-content img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.gallery-content .gallery-card-content .gallery-card .image-content .btn-add-to-wishlist {
+  width: 30px;
+  height: 30px;
+  background: #ffffff;
+  border-radius: 100%;
+  position: absolute;
+  top: 10px;
+  right: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  outline: none;
+}
+.gallery-content .gallery-card-content .gallery-card .image-content .btn-add-to-wishlist svg {
+  width: 75%;
+  height: 75%;
+}
+.gallery-content .gallery-card-content .gallery-card .image-content .btn-add-to-wishlist.active svg g path {
+  fill: red;
+}
+.gallery-content .gallery-card-content .gallery-card .information-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5208vw;
+}
+.gallery-content .gallery-card-content .gallery-card .information-content .image-name {
+  font-weight: 500;
+  font-size: 0.9896vw;
+}
+.gallery-content .gallery-card-content .gallery-card .information-content .added-by {
+  font-size: 0.7812vw;
+}
+.gallery-content .gallery-card-content .gallery-card .information-content .added-by span {
+  color: #9a9a9a;
+}
+.gallery-content .gallery-page-control {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.gallery-content .gallery-page-control .next-prev-buttons {
+  width: max-content;
+  display: flex;
+  gap: 2.6042vw;
+}
+.gallery-content .gallery-page-control .next-prev-buttons .btn-blue {
+  width: max-content;
+  height: max-content;
+  cursor: pointer;
+  padding: 0.3646vw 1.875vw;
+  border-radius: 0.5208vw;
+  background: #3c64f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5208vw;
+  font-size: 0.7292vw;
+  color: white;
+}
+.gallery-content .gallery-page-control .next-prev-buttons .btn-blue svg {
+  width: 0.625vw;
+}
+
+.login-content {
+  min-height: 23.4375vw;
+  display: flex;
+}
+.login-content .card {
+  width: 20.8333vw;
+  margin: auto;
+  background-color: #fff;
+  padding: 1.0417vw;
+  border-radius: 0.5208vw;
+  box-shadow: 0 0.2604vw 0.5208vw rgba(0, 0, 0, 0.1);
+}
+.login-content .card h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 1.3021vw;
+}
+.login-content .card form {
+  display: flex;
+  flex-direction: column;
+}
+.login-content .card form input {
+  padding: 0.5208vw;
+  margin-bottom: 0.625vw;
+  border: 1px solid #ddd;
+  border-radius: 0.5208vw;
+  transition: border-color 0.3s ease-in-out;
+  outline: none;
+  color: #333;
+}
+.login-content .card form input:focus {
+  border-color: #555;
+}
+.login-content .card form button {
+  background-color: #3c64f5;
+  color: #fff;
+  padding: 0.5208vw;
+  border-radius: 0.5208vw;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  border: 1px solid #3c64f5;
+}
+.login-content .card form button:hover {
+  background-color: transparent;
+  color: #3c64f5;
+  border-color: #3c64f5;
+}
+
+.photos-content {
+  min-height: 23.4375vw;
+  display: flex;
+}
+.photos-content .card {
+  width: 20.8333vw;
+  margin: auto;
+  background-color: #fff;
+  padding: 1.0417vw;
+  border-radius: 0.5208vw;
+  box-shadow: 0 0.2604vw 0.5208vw rgba(0, 0, 0, 0.1);
+}
+.photos-content .card h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 1.3021vw;
+}
+.photos-content .card form {
+  display: flex;
+  flex-direction: column;
+}
+.photos-content .card form input {
+  padding: 0.5208vw;
+  margin-bottom: 0.625vw;
+  border: 1px solid #ddd;
+  border-radius: 0.5208vw;
+  transition: border-color 0.3s ease-in-out;
+  outline: none;
+  color: #333;
+}
+.photos-content .card form input:focus {
+  border-color: #555;
+}
+.photos-content .card form button {
+  background-color: #3c64f5;
+  color: #fff;
+  padding: 0.5208vw;
+  border-radius: 0.5208vw;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  border: 1px solid #3c64f5;
+}
+.photos-content .card form button:hover {
+  background-color: transparent;
+  color: #3c64f5;
+  border-color: #3c64f5;
+}
+
+.my-photos-table {
+  width: 80%;
+  margin: auto;
+}
+.my-photos-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.my-photos-table th, .my-photos-table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+.my-photos-table th {
+  background-color: #f4f4f4;
+}
+.my-photos-table img {
+  max-width: 100px;
+  height: auto;
+}
+.my-photos-table .btn {
+  padding: 5px 10px;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 5px;
+}
+.my-photos-table .btn-edit {
+  background-color: #4CAF50;
+}
+.my-photos-table .btn-delete {
+  background-color: #f44336;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,18 @@
+# Enable URL rewriting
+RewriteEngine On
+
+# Ensure requests are directed to the public folder
+RewriteBase /
+
+# Check if the requested file or directory exists
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Rewrite the request to the index.php file
+RewriteRule ^(.*)$ index.php [L,QSA]
+
+# Set the default charset to UTF-8
+AddDefaultCharset UTF-8
+
+# Disable directory browsing
+Options -Indexes
